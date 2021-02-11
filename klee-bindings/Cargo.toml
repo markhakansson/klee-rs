@@ -1,0 +1,9 @@
+[package]
+name = "klee-bindings"
+version = "0.1.0"
+authors = ["Mark Hakansson <mark.hakansson@live.se>"]
+edition = "2018"
+description = "Raw bindings to the KLEE library using bindgen"
+
+[build-dependencies]
+bindgen = "0.57.0"
