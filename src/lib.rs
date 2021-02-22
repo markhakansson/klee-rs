@@ -3,6 +3,8 @@ extern crate libc;
 
 use libc::{c_char, c_void};
 
+/// Makes the object `var` symbolic. `name` is the identifier of this object
+/// used by KLEE.
 pub fn klee_make_symbolic<T>(var: &mut T, name: String) {
     unsafe {
         ffi::klee_make_symbolic(
@@ -19,6 +21,7 @@ pub fn klee_abort() {
     }
 }
 
+// Assumes that the `condition` is true during KLEE runtime.
 pub fn klee_assume(condition: bool) {
     unsafe {
         ffi::klee_assume(condition as usize);
