@@ -17,6 +17,8 @@ fn main() {
         // Whitelist and blacklist
         .whitelist_function("klee_.*")
         .blacklist_type("__int.*")
+        .ctypes_prefix("cty")
+        .use_core()
         // Tell cargo to invalidate the built crate whenever any of the
         // included header files changed.
         .parse_callbacks(Box::new(bindgen::CargoCallbacks))
