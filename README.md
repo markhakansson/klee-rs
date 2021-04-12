@@ -8,5 +8,5 @@ and can be used for both `std`and `no_std` environments.
 # License
 License under MIT. See [LICENSE](/LICENSE).
 
-# Contribution
-See [CONTRIBUTION.md](/CONTRIBUTION.md).
+# Contributing
+See [CONTRIBUTING.md](/CONTRIBUTING.md).
