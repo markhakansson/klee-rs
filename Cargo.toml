@@ -8,4 +8,4 @@ edition = "2018"
 
 [dependencies]
 klee-bindings = { path = "klee-bindings/" }
-libc = "0.2.0"
+cty = "0.2.1"
