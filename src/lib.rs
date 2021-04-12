@@ -1,6 +1,9 @@
 #![no_std]
-
-extern crate klee_bindings as ffi;
+#![allow(unused_imports)]
+#![allow(non_camel_case_types)]
+#![allow(dead_code)]
+mod bindings;
+use bindings as ffi;
 
 use cty::{c_char, c_void};
 
