@@ -1,4 +1,5 @@
 # `klee-rs`
+[![Crate](https://img.shields.io/crates/v/klee-rs)](https://crates.io/crates/klee-rs)
 > Provides a safe API for interfacing with KLEE.
 
 ----
