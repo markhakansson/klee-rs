@@ -1,4 +1,5 @@
 # `klee-rs`
+[![Crate](https://img.shields.io/crates/v/klee-rs)](https://crates.io/crates/klee-rs)
 > Provides a safe API for interfacing with KLEE.
 
 ----
@@ -11,7 +12,7 @@ Refer to the official KLEE documentation for how to use it.
 * KLEE v2+
 
 # License
-License under MIT. See [LICENSE](/LICENSE).
+Licensed under MIT. See [LICENSE](/LICENSE).
 
-# Contributing
-See [CONTRIBUTING.md](/CONTRIBUTING.md).
+## Contributing
+Issues and pull requests are welcomed! See [CONTRIBUTING.md](/CONTRIBUTING.md).
