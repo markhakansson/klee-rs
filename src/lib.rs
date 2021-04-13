@@ -1,3 +1,8 @@
+//! A safe KLEE API for Rust.
+//!
+//! This crate works on both `std` and `no_std` environments.
+//! Not all KLEE functions have safe wrapper for them yet.
+//!
 #![no_std]
 #![allow(unused_imports)]
 #![allow(non_camel_case_types)]

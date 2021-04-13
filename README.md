@@ -11,7 +11,7 @@ Refer to the official KLEE documentation for how to use it.
 * KLEE v2+
 
 # License
-License under MIT. See [LICENSE](/LICENSE).
+Licensed under MIT. See [LICENSE](/LICENSE).
 
-# Contributing
-See [CONTRIBUTING.md](/CONTRIBUTING.md).
+## Contributing
+Issues and pull requests are welcomed! See [CONTRIBUTING.md](/CONTRIBUTING.md).
