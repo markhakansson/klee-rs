@@ -3,6 +3,12 @@ name = "klee-rs"
 version = "0.1.0"
 authors = ["Mark Hakansson <mark.hakansson@live.se>"]
 edition = "2018"
+description = "A safe KLEE API for Rust"
+categories = ["no_std", "api-bindings"]
+keywords = ["klee", "symbolic", "execution", "api"]
+readme = "README.md"
+repository = "https://github.com/markhakansson/klee-rs"
+license = "MIT"
 
 [dependencies]
 cty = "0.2.1"
