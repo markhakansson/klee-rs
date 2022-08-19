@@ -12,3 +12,6 @@ license = "MIT OR Apache-2.0"
 
 [dependencies]
 cty = "0.2.1"
+
+[features]
+rawffi = []

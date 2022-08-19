@@ -2,14 +2,19 @@
 //!
 //! This crate works on both `std` and `no_std` environments.
 //! Not all KLEE functions have safe wrapper for them yet.
-//!
 #![no_std]
 #![allow(unused_imports)]
 #![allow(non_camel_case_types)]
 #![allow(dead_code)]
-mod bindings;
-use bindings as ffi;
 
+#[cfg(not(feature = "rawffi"))]
+mod bindings;
+/// The raw unsafe bindings to KLEE. Can be accessed by enabling the `rawffi`
+/// feature in the crate.
+#[cfg(feature = "rawffi")]
+pub mod bindings;
+
+use bindings as ffi;
 use cty::{c_char, c_void};
 
 /// Makes the object `var` symbolic. `name` is the identifier of this object

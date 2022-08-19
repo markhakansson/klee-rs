@@ -8,10 +8,17 @@ and can be used for both `std`and `no_std` environments.
 
 Refer to the official KLEE documentation for how to use it.
 
-# Requirements
+## Requirements
 * KLEE v2+
 
-# License
+## Features
+The raw bindings can be exposed by enabling the `rawffi` feature:
+```toml
+[dependencies]
+klee-rs = { version = "x.y.z", features = ["rawffi"] }
+```
+
+## License
 Licensed under either of
 
 - Apache License, Version 2.0 ([LICENSE-APACHE](LICENSE-APACHE) or
