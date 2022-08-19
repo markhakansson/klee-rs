@@ -40,3 +40,12 @@ pub fn klee_assume(condition: bool) {
         ffi::klee_assume(condition as usize);
     }
 }
+
+/// On the symbolic variable `var`, prefer to adhere to the `condition`
+/// when generating test cases if possible.
+#[inline(always)]
+pub fn klee_prefer_cex<T>(var: &mut T, condition: bool) {
+    unsafe {
+        ffi::klee_prefer_cex(var as *mut T as *mut c_void, condition as usize);
+    }
+}
